@@ -1,27 +1,36 @@
-# Angular CI and Testing Project
+# React.js CI and Testing Template
+![Travis (.org)](https://img.shields.io/travis/bradwindy/angular-ci-test.svg)
+![Code Climate coverage](https://img.shields.io/codeclimate/coverage/bradwindy/angular-ci-test.svg)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/bradwindy/angular-ci-test.svg)
+![Code Climate issues](https://img.shields.io/codeclimate/issues/bradwindy/angular-ci-test.svg)
+![GitHub](https://img.shields.io/github/license/bradwindy/angular-ci-test.svg?color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/bradwindy/angular-ci-test.svg)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+## About
+This repo is a test project I created to learn how to implement aspects of continuous integration and testing with Angular. 
 
-## Development server
+I have used Travis CI and Code Climate to implement code coverage, tslint checking and testing using Karma. 
+The tests are in the file app.component.spec.ts. Currently there are not many, but I plan to write more in the future.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The project gets automatically checked after a push, then if all checks and tests pass, the project is built and 
+deployed to GitHub Pages. 
 
-## Code scaffolding
+If you like this project, check out my website to read more about me.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This code is licensed under GPL-3.0. It's open source!
 
-## Build
+Feel free to contact me, or open any issues or pull requests.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Built With
 
-## Running unit tests
+* [Travis CI](https://travis-ci.org/) - Used for continuous integration
+* [Code Climate](https://codeclimate.com) - Used for coverage and coverage badges
+* [Karma](https://karma-runner.github.io/latest/index.html) - Used for testing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Author
 
-## Running end-to-end tests
+* **Bradley Windybank** - *All work* 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Acknowledgments
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Todd Palmer for writing [this tutorial](https://blog.angularindepth.com/the-angular-devops-series-ct-ci-with-travis-ci-and-github-pages-3c02664f078) which helped a lot :)
