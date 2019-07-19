@@ -1,20 +1,20 @@
 language: node_js
 node_js:
-  - "10"
+  - '10'
 dist: trusty
 sudo: required
 branches:
   only:
-  - master
+    - master
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
-- npm run test-headless
-- ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
+  - ng lint
+  - npm run test-headless
+  - ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
 deploy:
   provider: pages
-  local_dir: dist/travis-demo
+  local_dir: dist/angular-ci
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
