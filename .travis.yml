@@ -1,3 +1,6 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=19b2a7d66f2ba914b2ae9365bdfe09c838458e0c7d8a0d0c95f4d44d58b73dde
 language: node_js
 node_js:
   - '10'
@@ -8,10 +11,15 @@ branches:
     - master
 before_script:
   - npm install -g @angular/cli
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
   - ng lint
   - npm run test-headless
   - ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
   provider: pages
   local_dir: dist/angular-ci
