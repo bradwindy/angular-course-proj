@@ -20,7 +20,7 @@ script:
   - ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
 after_script:
   - ls -a
-  - ./cc-test-reporter format-coverage -t lcov -o codeclimate.frontend.json coverage/angular-ci/lcovcoverage/.info
+  - ./cc-test-reporter format-coverage -t lcov -o codeclimate.frontend.json coverage/angular-ci/lcov.info
   - if [[ "$TRAVIS_TEST_RESULT" == 0 ]]; then ./cc-test-reporter upload-coverage; fi
 deploy:
   provider: pages
