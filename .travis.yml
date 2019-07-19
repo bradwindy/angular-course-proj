@@ -14,7 +14,7 @@ script:
 - ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
 deploy:
   provider: pages
-  local_dir: src
+  local_dir: dist/travis-demo
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
