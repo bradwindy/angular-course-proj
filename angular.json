@@ -77,6 +77,11 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
             "scripts": []
+          },
+          "codeCoverage": {
+            "exclude": [
+              "src/polyfills.ts"
+            ]
           }
         },
         "lint": {
