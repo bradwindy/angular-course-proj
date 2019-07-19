@@ -12,3 +12,9 @@ script:
 - ng lint
 - npm run test-headless
 - ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
