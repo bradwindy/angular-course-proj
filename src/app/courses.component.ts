@@ -16,12 +16,14 @@ import { CoursesService } from './courses.service';
         </button>
       </li>
     </ul>
+    <input [(ngModel)]="inputField" (keyup.enter)="onEnter()"/>
   `
 })
 export class CoursesComponent {
   title = 'List of courses';
   courses;
   isActive = false;
+  inputField;
 
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
@@ -29,5 +31,9 @@ export class CoursesComponent {
 
   onSave() {
     alert('Button Clicked');
+  }
+
+  onEnter() {
+    alert('Text is: ' + this.inputField);
   }
 }
