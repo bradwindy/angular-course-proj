@@ -16,6 +16,7 @@ import { CoursesService } from './courses.service';
         </button>
       </li>
     </ul>
+    <input (keyup.enter)="onEnter($event)"/>
   `
 })
 export class CoursesComponent {
@@ -29,5 +30,9 @@ export class CoursesComponent {
 
   onSave() {
     alert('Button Clicked');
+  }
+
+  onEnter(event: any) {
+    alert('Text was: ' + event.target.value);
   }
 }
