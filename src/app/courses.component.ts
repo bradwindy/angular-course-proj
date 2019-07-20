@@ -34,6 +34,6 @@ export class CoursesComponent {
   }
 
   onEnter() {
-    alert('Text was: ' + this.inputField);
+    alert('Text is: ' + this.inputField);
   }
 }
