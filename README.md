@@ -1,10 +1,10 @@
 # React.js CI and Testing Template
-![Travis (.org)](https://img.shields.io/travis/bradwindy/angular-ci-test.svg)
-![Code Climate coverage](https://img.shields.io/codeclimate/coverage/bradwindy/angular-ci-test.svg)
-![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/bradwindy/angular-ci-test.svg)
-![Code Climate issues](https://img.shields.io/codeclimate/issues/bradwindy/angular-ci-test.svg)
-![GitHub](https://img.shields.io/github/license/bradwindy/angular-ci-test.svg?color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/bradwindy/angular-ci-test.svg)
+![Travis (.org)](https://img.shields.io/travis/bradwindy/angular-course-proj.svg)
+![Code Climate coverage](https://img.shields.io/codeclimate/coverage/bradwindy/angular-course-proj.svg)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/bradwindy/angular-course-proj.svg)
+![Code Climate issues](https://img.shields.io/codeclimate/issues/bradwindy/angular-course-proj.svg)
+![GitHub](https://img.shields.io/github/license/bradwindy/angular-course-proj.svg?color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/bradwindy/angular-course-proj.svg)
 
 ## About
 This repo is a test project I created to learn how to implement aspects of continuous integration and testing with Angular. 

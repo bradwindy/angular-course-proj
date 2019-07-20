@@ -1,6 +1,6 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=19b2a7d66f2ba914b2ae9365bdfe09c838458e0c7d8a0d0c95f4d44d58b73dde
+    - CC_TEST_REPORTER_ID=8fcebf7e2c6b4c8469ea9ad2e6e4db9c9565ed2e018fb136aa240dad366884e5
 language: node_js
 node_js:
   - '10'
@@ -17,14 +17,14 @@ before_script:
 script:
   - ng lint
   - npm run test-headless
-  - ng build --prod --base-href https://bradwindy.github.io/angular-ci-test/
+  - ng build --prod --base-href https://bradwindy.github.io/angular-course-proj/
 after_script:
   - ls -a
-  - ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.json coverage/angular-ci/lcov.info
+  - ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.json coverage/angular-course-proj/lcov.info
   - if [[ "$TRAVIS_TEST_RESULT" == 0 ]]; then ./cc-test-reporter upload-coverage; fi
 deploy:
   provider: pages
-  local_dir: dist/angular-ci
+  local_dir: dist/angular-course-proj
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
