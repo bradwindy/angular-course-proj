@@ -4,10 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CoursesService {
-  constructor() {
-  }
+  constructor() {}
 
-  static getCourses() {
+  getCourses() {
     return ['one', 'two', 'three'];
   }
 }
