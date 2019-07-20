@@ -1,4 +1,4 @@
-# React.js CI and Testing Template
+# Angular Project
 ![Travis (.org)](https://img.shields.io/travis/bradwindy/angular-course-proj.svg)
 ![Code Climate coverage](https://img.shields.io/codeclimate/coverage/bradwindy/angular-course-proj.svg)
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/bradwindy/angular-course-proj.svg)
@@ -7,7 +7,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/bradwindy/angular-course-proj.svg)
 
 ## About
-This repo is a test project I created to learn how to implement aspects of continuous integration and testing with Angular. 
+This repo is derived from a test project I created to learn how to implement aspects of continuous integration and testing with Angular. 
 
 I have used Travis CI and Code Climate to implement code coverage, tslint checking and testing using Karma. 
 The tests are in the file app.component.spec.ts. Currently there are not many, but I plan to write more in the future.
