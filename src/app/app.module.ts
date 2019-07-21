@@ -6,11 +6,26 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CoursesService } from './courses.service';
 import { FormsModule } from '@angular/forms';
+import { FavouriteComponent } from './favourite/favourite.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHeart as fasHeart, faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as farHeart, faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    CoursesComponent,
+    FavouriteComponent,
+    PanelComponent
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [CoursesService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    library.add(fasStar, farStar, fasHeart, farHeart);
+  }
+}

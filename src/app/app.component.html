@@ -3,6 +3,24 @@
   <h1>{{ title }}</h1>
 
   <app-hi></app-hi>
+  <app-favourite
+    (change)="onFavouriteChange($event)"
+    [isFavourite]="post.isFavourite"
+  >
+    <ng-container class="text">Favourite </ng-container>
+  </app-favourite>
+  <app-panel>
+    <ng-container class="title">
+      <h3>Custom content</h3>
+    </ng-container>
+
+    <ng-container class="body">
+      <ul>
+        <li>I can put custom html content in this card using ng-content</li>
+        <li>This makes the component highly reusable</li>
+      </ul>
+    </ng-container>
+  </app-panel>
 </div>
 
 <router-outlet></router-outlet>

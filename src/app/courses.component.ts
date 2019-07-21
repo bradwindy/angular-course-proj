@@ -5,7 +5,7 @@ import { CoursesService } from './courses.service';
   selector: 'app-hi',
   template: `
     <p>{{ title }}</p>
-    <ul>
+    <ul class="p-0">
       <li *ngFor="let course of courses" class="list-unstyled pb-2">
         <button
           class="btn btn-primary"
@@ -17,6 +17,7 @@ import { CoursesService } from './courses.service';
       </li>
     </ul>
     <input [(ngModel)]="inputField" (keyup.enter)="onEnter()" />
+    <br />
   `
 })
 export class CoursesComponent {
