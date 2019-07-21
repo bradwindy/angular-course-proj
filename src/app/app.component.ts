@@ -12,4 +12,12 @@ export class AppComponent {
     title: 'Title',
     isFavourite: false
   };
+
+  onFavouriteChange(eventArgs) {
+    if (eventArgs) {
+      alert('Favourite-d');
+    } else {
+      alert('Un-favourite-d');
+    }
+  }
 }

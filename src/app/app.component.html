@@ -4,7 +4,7 @@
 
   <app-hi></app-hi>
   <app-favourite
-    (change)="onFavouriteChange()"
+    (change)="onFavouriteChange($event)"
     [isFavourite]="post.isFavourite"
   ></app-favourite>
 </div>
