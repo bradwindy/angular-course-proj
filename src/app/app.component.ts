@@ -10,6 +10,6 @@ export class AppComponent {
 
   post = {
     title: 'Title',
-    isFavourite: true
+    isFavourite: false
   };
 }

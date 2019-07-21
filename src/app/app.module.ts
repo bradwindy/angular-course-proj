@@ -9,8 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { faHeart as fasHeart, faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as farHeart, faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 
 @NgModule({
   declarations: [AppComponent, CoursesComponent, FavouriteComponent],
@@ -20,6 +20,6 @@ import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 })
 export class AppModule {
   constructor() {
-    library.add(farStar, fasStar);
+    library.add(fasStar, farStar, fasHeart, farHeart);
   }
 }
