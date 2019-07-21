@@ -1,0 +1,10 @@
+<fa-icon
+  (click)="onClick()"
+  *ngIf="isFavourite"
+  [icon]="['fas', 'star']"
+></fa-icon>
+<fa-icon
+  (click)="onClick()"
+  *ngIf="!isFavourite"
+  [icon]="['far', 'star']"
+></fa-icon>

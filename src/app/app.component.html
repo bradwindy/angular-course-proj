@@ -3,6 +3,10 @@
   <h1>{{ title }}</h1>
 
   <app-hi></app-hi>
+  <app-favourite
+    (change)="onFavouriteChange()"
+    [isFavourite]="post.isFavourite"
+  ></app-favourite>
 </div>
 
 <router-outlet></router-outlet>
