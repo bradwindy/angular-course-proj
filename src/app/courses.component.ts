@@ -16,7 +16,7 @@ import { CoursesService } from './courses.service';
         </button>
       </li>
     </ul>
-    <input [(ngModel)]="inputField" (keyup.enter)="onEnter()"/>
+    <input [(ngModel)]="inputField" (keyup.enter)="onEnter()" />
   `
 })
 export class CoursesComponent {
