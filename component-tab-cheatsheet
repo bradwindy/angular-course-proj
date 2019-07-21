@@ -1,0 +1,2 @@
+# For a centred card of width 5
+div.col-5.mx-auto>div.card.>div.card-body>h5.card-title+p.card-text

@@ -11,9 +11,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart as fasHeart, faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farHeart, faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent, FavouriteComponent],
+  declarations: [
+    AppComponent,
+    CoursesComponent,
+    FavouriteComponent,
+    PanelComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [CoursesService],
   bootstrap: [AppComponent]
