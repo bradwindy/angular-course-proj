@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FavouriteComponent } from './favourite.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 describe('FavouriteComponent', () => {
   let component: FavouriteComponent;
@@ -8,6 +9,7 @@ describe('FavouriteComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [FontAwesomeModule],
       declarations: [FavouriteComponent]
     }).compileComponents();
   }));
