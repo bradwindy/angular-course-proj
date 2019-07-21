@@ -6,7 +6,9 @@
   <app-favourite
     (change)="onFavouriteChange($event)"
     [isFavourite]="post.isFavourite"
-  ></app-favourite>
+  >
+    <ng-container class="text">Favourite </ng-container>
+  </app-favourite>
   <app-panel>
     <ng-container class="title">
       <h3>Custom content</h3>

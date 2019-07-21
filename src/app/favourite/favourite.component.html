@@ -1,10 +1,5 @@
-<fa-icon
-  (click)="onClick()"
-  *ngIf="isFavourite"
-  [icon]="['fas', 'heart']"
-></fa-icon>
-<fa-icon
-  (click)="onClick()"
-  *ngIf="!isFavourite"
-  [icon]="['far', 'heart']"
-></fa-icon>
+<button (click)="onClick()" class="btn btn-danger m-3">
+  <ng-content select=".text"></ng-content>
+  <fa-icon *ngIf="isFavourite" [icon]="['fas', 'heart']"></fa-icon>
+  <fa-icon *ngIf="!isFavourite" [icon]="['far', 'heart']"></fa-icon>
+</button>
