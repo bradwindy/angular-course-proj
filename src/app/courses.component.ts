@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CoursesService } from './courses.service';
 
 @Component({
-  selector: 'app-hi',
+  selector: 'app-start',
   template: `
     <p>{{ title }}</p>
     <ul class="p-0">

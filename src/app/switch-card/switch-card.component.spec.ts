@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PanelComponent } from './panel.component';
+import { SwitchCardComponent } from './switch-card.component';
 
-describe('PanelComponent', () => {
-  let component: PanelComponent;
-  let fixture: ComponentFixture<PanelComponent>;
+describe('SwitchCardComponent', () => {
+  let component: SwitchCardComponent;
+  let fixture: ComponentFixture<SwitchCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [PanelComponent]
+      declarations: [SwitchCardComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PanelComponent);
+    fixture = TestBed.createComponent(SwitchCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

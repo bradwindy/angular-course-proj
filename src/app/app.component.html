@@ -2,14 +2,16 @@
 <div style="text-align:center">
   <h1>{{ title }}</h1>
 
-  <app-hi></app-hi>
+  <app-start></app-start>
+
   <app-favourite
     (change)="onFavouriteChange($event)"
     [isFavourite]="post.isFavourite"
   >
     <ng-container class="text">Favourite </ng-container>
   </app-favourite>
-  <app-panel>
+
+  <app-card>
     <ng-container class="title">
       <h3>Custom content</h3>
     </ng-container>
@@ -20,7 +22,9 @@
         <li>This makes the component highly reusable</li>
       </ul>
     </ng-container>
-  </app-panel>
+  </app-card>
+
+  <app-switch-card></app-switch-card>
 </div>
 
 <router-outlet></router-outlet>

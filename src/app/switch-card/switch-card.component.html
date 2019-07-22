@@ -1,0 +1,43 @@
+<div class="col-5 mx-auto pt-3">
+  <div class="card text-left">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a
+            (click)="viewMode = 'one'"
+            [class.active]="viewMode == 'one'"
+            class="nav-link"
+            >Tab 1</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            (click)="viewMode = 'two'"
+            [class.active]="viewMode == 'two'"
+            class="nav-link"
+            >Tab 2</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div [ngSwitch]="viewMode" class="card-body">
+      <div *ngSwitchCase="'one'">
+        <h5 class="card-title">This card is tabbed!</h5>
+        <p class="card-text">
+          Tabs can be clicked to change the content.
+        </p>
+        <a class="btn btn-primary" href="#">A button</a>
+      </div>
+
+      <div *ngSwitchCase="'two'">
+        <h5 class="card-title">Second page</h5>
+        <p class="card-text">
+          This is an example of using ngSwitchCase and bootstrap to make
+          switchable elements.
+        </p>
+        <a class="btn btn-primary" href="#">Another button</a>
+      </div>
+    </div>
+  </div>
+</div>
