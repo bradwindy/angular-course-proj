@@ -1,0 +1,21 @@
+<div class="col-5 mx-auto mt-3 mb-5">
+  <div class="card text-left">
+    <div class="card-header font-weight-bold">
+      Items
+    </div>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let item of items" class="list-group-item">
+        {{ item.name }}
+        <a (click)="onRemove(item)" class="float-right text-muted">
+          ×
+        </a>
+      </li>
+    </ul>
+    <div class="card-body">
+      <div (click)="onAdd()">
+        <a class="text-primary">Add Item</a>
+        <a class="text-primary float-right">+</a>
+      </div>
+    </div>
+  </div>
+</div>

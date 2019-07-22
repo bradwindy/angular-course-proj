@@ -11,7 +11,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faHeart as fasHeart,
-  faStar as fasStar
+  faPlus,
+  faPlusCircle,
+  faPlusSquare,
+  faStar as fasStar,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faHeart as farHeart,
@@ -19,6 +23,7 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 import { CardComponent } from './card/card.component';
 import { SwitchCardComponent } from './switch-card/switch-card.component';
+import { AddableListComponent } from './addable-list/addable-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,8 @@ import { SwitchCardComponent } from './switch-card/switch-card.component';
     CoursesComponent,
     FavouriteComponent,
     CardComponent,
-    SwitchCardComponent
+    SwitchCardComponent,
+    AddableListComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [CoursesService],
@@ -34,6 +40,15 @@ import { SwitchCardComponent } from './switch-card/switch-card.component';
 })
 export class AppModule {
   constructor() {
-    library.add(fasStar, farStar, fasHeart, farHeart);
+    library.add(
+      fasStar,
+      farStar,
+      fasHeart,
+      farHeart,
+      faPlusCircle,
+      faPlus,
+      faPlusSquare,
+      faTimes
+    );
   }
 }
